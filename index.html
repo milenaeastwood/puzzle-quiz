@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <script src="js/questions.js" defer></script>
+    <script src="js/app.js" defer></script>
+
+    <title>Puzzle-Quiz</title>
+  </head>
+  <body>
+    <div class="app">
+      <nav class="logo">
+        <h1>Puzzle - Quiz</h1>
+        <button id="sound"></button>
+      </nav>
+      <div id="quizz_puzzle_container">
+        <div class="quiz">
+          <h2 class="question" id="question-index">Hier ist die FRAGE</h2>
+          <div id="answer-buttons">
+            <button class="btn" id="A">Answer 1</button>
+            <button class="btn" id="B">Answer 2</button>
+            <button class="btn" id="C">Answer 3</button>
+            <button class="btn" id="D">Answer 4</button>
+          </div>
+          <button id="next-btn">Next Question</button>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+                <p></p>
+                <button id="modal-btn">Show Result</button>
+            </div>
+        </div>
+        </div>
+        <div id="puzzle-box"></div>
+      </div>
+    </div>
+  </body>
+</html>

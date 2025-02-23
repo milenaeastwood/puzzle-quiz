@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <script src="js/questions.js" defer></script>
+    <script src="js/start.js" defer></script>
+
+    <title>Puzzle-Quiz</title>
+  </head>
+  <body>
+    <div class="app">
+      <nav class="logo">
+        <h1>Puzzle - Quiz</h1>
+        <button id="sound"></button>
+      </nav>
+      <div id="quizz_puzzle_container">
+        <div class="quiz">
+          <h2 class="question">Choose Difficulty:</h2>
+          <div class="choose-buttons" id="btns-difficulty">
+            <button id="easy" class="btn" value="1">Easy</button>
+            <button id="medium" class="btn" value="2">Medium</button>
+            <button id="hard" class="btn" value="3">Hard</button>
+            <button id="extra-hard" class="btn" value="4">Extra hard</button>
+            <button id="random" class="btn" value="random">Random</button>
+          </div>
+        </div>
+
+        <div id="puzzle">
+          <h2 class="question">Choose One or More Categories:</h2>
+          <div class="choose-buttons" id="btns-category">
+            <button id="banana" class="btn" value="banana eclipse">
+              Banana Eclipse
+            </button>
+            <button id="jellyfish" class="btn" value="jellyfish disco">
+              Jellyfish Disco
+            </button>
+            <button id="waffle" class="btn" value="waffle tornado">
+              Waffle Tornado
+            </button>
+            <button id="bubble" class="btn" value="bubble toaster">
+              Bubble Toaster
+            </button>
+            <button id="random" class="btn" value="random">Random</button>
+          </div>
+        </div>
+      </div>
+
+      <button id="btn-start">Start Game</button>
+    </div>
+  </body>
+</html>
